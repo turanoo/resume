@@ -1,0 +1,190 @@
+%-------------------------
+% Author : Turan Naimey
+% Source: https://github.com/turanoo/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Enable ATS parseability
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+% Document begins here
+\begin{document}
+
+\begin{center}
+ \textbf{\Huge \scshape Turan Naimey} \\ \vspace{1pt}
+ \small 347-852-6534 $|$ \href{mailto:turan1naimey@gmail.com}{\underline{turan1naimey@gmail.com}} $|$
+ \href{https://linkedin.com/in/turannaimey}{\underline{linkedin.com/in/turannaimey}} $|$
+ \href{https://github.com/turanoo}{\underline{github.com/turanoo}}
+\end{center}
+
+% List your employment under this section
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Deloitte Consulting}{July 2019 -- Present}
+{Software Engineer}{Gilbert, AZ}
+{Pandemic Unemployment Assistance - Full Stack Developer}
+\resumeItemListStart
+\resumeItem{Part of the team responsible for maintaining the PUA system which has disbursed over \$8 billion in unemployment aids to over 700k claimants}
+\resumeItem{Implemented and maintained the correspondence module which sends daily emails and notifications to more than 700k active claimants in the PUA system}
+\resumeItem{Diagnosed and fixed defects in the production environment built on .NET, Oracle SQL, and AWS}
+\resumeItem{Created a Python application to run existing and new SQL scripts to automate data fixes}
+\resumeItem{Developed SQL queries/scripts for data fix, data analysis and reporting purposes}
+\resumeItemListEnd
+
+% ----------- Use resumeSubSubheading if you have more than one position for the same company -----------
+\resumeSubSubheading
+{Google - Full Stack Developer}{}
+\resumeItemListStart
+\resumeItem{Implemented and maintained a Reference Management platform for Google Cloud Marketing using Salesforce}
+\resumeItem{Created a custom API using Node and Express to download data from Salesforce for a custom JS dashboard}
+\resumeItem{Engaged with the business team to write new requirements, support existing features and identify user issues}
+\resumeItem{Addressed regular production bugs and improvements in existing Lightning (JS) and Salesforce services using Kanban to prioritize requirements, and utilizing CI/CD pipelines to rapidly iterate}
+\resumeItemListEnd
+
+\resumeSubSubheading
+{Deloitte Internal - Full Stack Developer}{}
+\resumeItemListStart
+\resumeItem {Suggested and procured developing a web-based solution to facilitate event/course management}
+\resumeItem{Led and managed a team of 4 developers to design, develop and test features in an Agile environment}
+\resumeItem{Developed the product using MongoDB, Express, React and Node technologies and deployed it on AWS}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Caporaso Lab}{April 2018 -- May 2019}
+{Software Developer}{Flagstaff, AZ}
+{QIIME2 - Software Developer}
+\resumeItemListStart
+\resumeItem{Assisted in development, testing and documentation of the open-source QIIME2 framework, and its related plugins using Python, Miniconda, Git and various other open-source technologies}
+\resumeItem{Performed statistical analysis and created meaningful visualizations using D3, Vega, Pandas, and Numpy}
+\resumeItem{Utilized various technologies like Jekyll, Sphinx, Travis CI, Git and Docker to maintain QIIME2}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% List your projects under this section
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Restaurant Finder} $|$ \emph{MongoDB, Express, React, Node, AWS}}{}
+\resumeItemListStart
+\resumeItem{Web-app that generates a random restaurant based on user inputs (radius, food type, price, etc.)}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Cross Platform Primacy Desktop App} $|$ \emph{Python, Electron, Babel, Webpack, D3, Plotly, Bootstrap}}{}
+\resumeItemListStart
+\resumeItem{Primacy is a CLI based Bioinformatics software built on Python which is used for optimizing pathogen identification}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% List your technical skills here
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+ \small{\item{
+       \textbf{Languages}{: Python, JavaScript, C\#, HTML/CSS} \\
+       \textbf{Frameworks}{: React, Node.js, Express, Salesforce, MongoDB, Flask, Angular, Bootstrap, Material-UI, .NET, REST} \\
+       \textbf{Developer Tools}{: Git/GitHub, Docker, TravisCI, Microsoft Azure, AWS, Atom, VS Code} \\
+       \textbf{Libraries}{: Pandas, NumPy, Matplotlib}
+       }}
+\end{itemize}
+
+% List your colleges here
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Northern Arizona University}{Flagstaff, AZ}
+{Bachelor of Science in Computer Science}{Jan. 2015 -- May 2019}
+{President of the International Club}
+\resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
